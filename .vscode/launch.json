@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Staging",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=ENV=staging",
+        "--dart-define=BASE_URL=https://staging.api.myapp.com"
+      ]
+    },
+    {
+      "name": "Flutter Production",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=ENV=production",
+        "--dart-define=BASE_URL=https://api.myapp.com"
+      ]
+    }
+  ]
+}
