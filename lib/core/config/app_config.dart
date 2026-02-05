@@ -16,9 +16,5 @@ class AppConfig {
   final String baseUrl;
   final Flavor flavor;
 
-  AppConfig({
-    required this.baseUrl,
-    required this.flavor,
-  });
+  AppConfig({required this.baseUrl, required this.flavor});
 }
-

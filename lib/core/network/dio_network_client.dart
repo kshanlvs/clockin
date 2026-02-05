@@ -27,11 +27,19 @@ class DioNetworkClient extends NetworkClient {
 
   @override
   Future post(String url, {Map<String, String>? headers, body}) {
-    return _dio.post(url, options: Options(headers: headers), data: body);
+    return _dio.post(
+      url,
+      options: Options(headers: headers),
+      data: body,
+    );
   }
 
   @override
   Future put(String url, {Map<String, String>? headers, body}) {
-    return _dio.put(url, options: Options(headers: headers), data: body);
+    return _dio.put(
+      url,
+      options: Options(headers: headers),
+      data: body,
+    );
   }
 }
