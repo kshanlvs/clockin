@@ -10,6 +10,7 @@ dependencies:
   dio: ^5.9.1
   flutter:
     sdk: flutter
+  flutter_native_splash: ^2.4.7
   go_router: ^17.0.1
 
 dev_dependencies:
@@ -19,3 +20,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+flutter_native_splash:
+  color: "#1E88E5"
+  image: assets/logo.png
+
+  android: true
+  ios: true
