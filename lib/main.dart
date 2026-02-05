@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // added bloc state management for splash screen
     return MultiBlocProvider(
       providers: [
         BlocProvider<SplashCubit>(create: (context) => SplashCubit()..start()),
