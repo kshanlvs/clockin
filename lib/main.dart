@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Provide the SplashCubit to the entire app
     return MultiBlocProvider(
       providers: [
         BlocProvider<SplashCubit>(create: (context) => SplashCubit()..start()),
