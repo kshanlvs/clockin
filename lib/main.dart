@@ -14,13 +14,11 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<SplashCubit>(
-          create: (context) => SplashCubit()..start(),
-        ),
+        BlocProvider<SplashCubit>(create: (context) => SplashCubit()..start()),
       ],
       child: MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      routerConfig: appRouter,
+        debugShowCheckedModeBanner: false,
+        routerConfig: appRouter,
       ),
     );
   }
